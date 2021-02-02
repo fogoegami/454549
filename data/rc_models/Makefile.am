@@ -112,8 +112,12 @@ if MINIX
 dist_install_DATA = rc_models.cfg x8hp.png x8hp.xml
 endif
 
-if OCTAGON
-dist_install_DATA = rc_models.cfg sf108.png sf108.xml sf2x8.png sf2x8.xml sf3038.png sf3038.xml sf5008.png sf5008.xml sf8008.png sf8008.xml sf98.png sf98.xml
+if SF8008
+dist_install_DATA = rc_models.cfg sf8008.png sf8008.xml
+endif
+
+if SF8008M
+dist_install_DATA = rc_models.cfg sf8008.png sf8008.xml
 endif
 
 if ODIN

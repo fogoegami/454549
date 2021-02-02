@@ -32,6 +32,10 @@ def getBoxProc():
 			procmodel = "GB TRIO 4K"
 		elif fileExists("/etc/modules-load.d/_gbip4k.conf"):
 			procmodel = "GB IP 4K"
+		elif fileExists("/etc/modules-load.d/_sf8008.conf"):
+			procmodel = "SF 8008 UHD"
+		elif fileExists("/etc/modules-load.d/_sf8008m.conf"):
+			procmodel = "SF 8008 MINI UHD"
 		else:
 			procmodel = open("/proc/stb/info/model", "r").readline().strip().lower()
 	except IOError:
