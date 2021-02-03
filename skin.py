@@ -11,10 +11,8 @@ from Components.Sources.Source import ObsoleteSource
 from Tools.Directories import SCOPE_CONFIG, SCOPE_CURRENT_LCDSKIN, SCOPE_CURRENT_SKIN, SCOPE_FONTS, SCOPE_SKIN, resolveFilename, fileExists
 from Tools.Import import my_import
 from Tools.LoadPixmap import LoadPixmap
-import six
 
-if six.PY2:
-	DEFAULT_SKIN = SystemInfo["HasFullHDSkinSupport"] and "454547/skin.xml" or "Vision-Turquoise-HD/skin.xml"
+DEFAULT_SKIN = SystemInfo["HasFullHDSkinSupport"] and "454547/skin.xml"
 EMERGENCY_SKIN = "skin_default/skin.xml"
 EMERGENCY_NAME = "Stone II"
 DEFAULT_DISPLAY_SKIN = SystemInfo["grautec"] and "skin_default/skin_display_grautec.xml" or "skin_default/skin_display.xml"
